@@ -1,6 +1,6 @@
 # SKT_AI_fellowship_3rd
 
-Unsupervised anomaly detection project
+Unsupervised anomaly detection
 
 #### 1주차 (~6/10)
 - USAD 정리 & 구현 & 아이디어 테스트 (SWaT 데이터)
