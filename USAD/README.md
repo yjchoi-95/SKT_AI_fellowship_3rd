@@ -1,6 +1,6 @@
 # USAD - UnSupervised Anomaly Detection on multivariate time series
 
-reference: https://github.com/manigalati/usad
+#### reference: https://github.com/manigalati/usad
 
 Scripts and utility programs for implementing the USAD architecture.
 
