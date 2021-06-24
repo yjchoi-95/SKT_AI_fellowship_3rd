@@ -201,8 +201,8 @@ class TadGAN(object):
         fake_gen_z = self.critic_z(z_gen_)
 
         self.encoder_generator_model = Model([x_gen, z_gen], [fake_gen_x, fake_gen_z, x_gen_rec])
-        self.encoder_generator_model.compile(loss=[self._wasserstein_loss, self._wasserstein_loss,
-                                                   'mse'], optimizer=self.optimizer,
+        self.encoder_generator_model.compile(loss=[self._wasserstein_loss, self._wasserstein_loss, 'mse'],
+                                             optimizer=self.optimizer,
                                              loss_weights=[1, 1, 10])
 
     def _fit(self, X):
