@@ -1,0 +1,107 @@
+absl-py==0.13.0
+astor==0.8.1
+azure-cognitiveservices-anomalydetector==0.3.0
+azure-common==1.1.27
+baytune==0.2.5
+botocore==1.20.97
+certifi==2021.5.30
+cffi @ file:///C:/ci/cffi_1613247308275/work
+chardet==4.0.0
+click==8.0.1
+cloudpickle==1.6.0
+colorama==0.4.4
+cycler==0.10.0
+dask==2021.6.1
+decorator==4.4.2
+distributed==2021.6.1
+docutils==0.15.2
+featuretools==0.11.0
+fsspec==2021.6.0
+future==0.18.2
+gast==0.2.2
+google-pasta==0.2.0
+grpcio==1.38.0
+h5py==2.10.0
+HeapDict==1.0.1
+idna==2.10
+imbalanced-learn==0.7.0
+imblearn==0.0
+importlib-metadata==4.5.0
+iso639==0.1.4
+isodate==0.6.0
+jmespath==0.10.0
+joblib @ file:///tmp/build/80754af9/joblib_1613502643832/work
+Keras==2.3.1
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.2
+kiwisolver @ file:///C:/ci/kiwisolver_1612282618948/work
+langdetect==1.0.9
+lightfm==1.16
+llvmlite==0.34.0
+locket==0.2.1
+Markdown==3.3.4
+matplotlib @ file:///C:/ci/matplotlib-suite_1613408055530/work
+mkl-fft==1.3.0
+mkl-random==1.0.4
+mkl-service==2.3.0
+mlblocks==0.3.4
+mlprimitives==0.2.5
+mongoengine==0.16.3
+msgpack==1.0.2
+msrest==0.6.21
+networkx==2.5.1
+nltk==3.6.2
+numba==0.51.2
+numpy==1.16.6
+oauthlib==3.1.1
+olefile==0.46
+opencv-python==4.5.2.54
+opt-einsum==3.3.0
+orion-ml==0.1.7
+pandas==0.24.2
+partd==1.2.0
+patsy==0.5.1
+Pillow @ file:///C:/ci/pillow_1617386319301/work
+protobuf==3.17.3
+psutil==5.8.0
+pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
+pymongo==3.11.4
+pyparsing @ file:///home/linux1/recipes/ci/pyparsing_1610983426697/work
+python-dateutil @ file:///home/ktietz/src/ci/python-dateutil_1611928101742/work
+python-louvain==0.13
+pyts==0.10.0
+pytz @ file:///tmp/build/80754af9/pytz_1612215392582/work
+PyWavelets==1.1.1
+PyYAML==5.4.1
+regex==2021.4.4
+requests==2.25.1
+requests-oauthlib==1.3.0
+s3fs==0.4.2
+scikit-image==0.14.5
+scikit-learn==0.20.4
+scipy @ file:///C:/ci/scipy_1616703425152/work
+seaborn @ file:///tmp/build/80754af9/seaborn_1608578541026/work
+six @ file:///C:/ci/six_1605205426665/work
+smart-open==5.1.0
+sortedcontainers==2.4.0
+statsmodels==0.12.2
+tabulate==0.8.9
+tblib==1.7.0
+tensorboard==1.15.0
+tensorflow==1.15.5
+tensorflow-estimator==1.15.1
+termcolor==1.1.0
+threadpoolctl @ file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
+toolz==0.11.1
+torch @ file:///C:/ci/pytorch_1596721630134/work
+tornado @ file:///C:/ci/tornado_1606935947090/work
+tqdm==4.61.1
+typing-extensions==3.10.0.0
+urllib3==1.26.5
+Werkzeug==2.0.1
+wincertstore==0.2
+wrapt==1.12.1
+xgboost==0.90
+XlsxWriter==1.4.3
+zict==2.0.0
+zipp==3.4.1
