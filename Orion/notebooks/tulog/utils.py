@@ -38,7 +38,7 @@ def convert_date(timelist):
 def convert_date_single(x):
     return datetime.fromtimestamp(x)
 
-def plot_ts(X, labels=None):
+def plot_ts(X, labels=None, save_opt = False, save_name = "plot_ts"):
     fig = plt.figure(figsize=(30, 6))
     ax = fig.add_subplot(111)
     
@@ -58,10 +58,13 @@ def plot_ts(X, labels=None):
     
     if labels:
         plt.legend(labels=labels, loc=1, prop={'size': 26})
+        
+    if save_opt:
+        plt.savefig('{}.png'.format(save_name), dpi=300)
     
     plt.show()
 
-def plot_error(X):
+def plot_error(X, save_opt = False, save_name = "plot_error"):
     plt.figure(figsize = (30, 6))
     gs1 = gridspec.GridSpec(3, 1)
     gs1.update(wspace=0.025, hspace=0.05) 
@@ -84,11 +87,14 @@ def plot_error(X):
         plt.yticks(size=22)
         plt.axis('on')
         ax1.set_xticklabels([])
+    
+    if save_opt:
+        plt.savefig('{}.png'.format(save_name), dpi=300)
 
     plt.show()
 
 
-def plot(dfs, anomalies=[]):
+def plot(dfs, anomalies=[], save_opt = False, save_name = "plot_error", acc = 0, f1 = 0):
     """ Line plot for time series.
     
     This function plots time series and highlights anomalous regions.
@@ -128,7 +134,7 @@ def plot(dfs, anomalies=[]):
             t2 = convert_date_single(anom[1])
             plt.axvspan(t1, t2, color=colors[i], alpha=0.2)
 
-    plt.title('NYC Taxi Demand', size=34)
+    plt.title('NYC Taxi Demand (acc: {}, f1: {})'.format(np.round(acc,3), np.round(f1,3)), size=34)
     plt.ylabel('# passengers', size=30)
     plt.xlabel('Time', size=30)
     plt.xticks(size=26)
@@ -144,10 +150,13 @@ def plot(dfs, anomalies=[]):
     ylabels = ['{:,.0f}'.format(x) + 'K' for x in ax.get_yticks()/1000]
     ax.set_yticklabels(ylabels)
     
+    if save_opt:
+        plt.savefig('{}.png'.format(save_name), dpi=300)
+
     plt.show()
     
     
-def plot_rws(X, window=100, k=5, lim=1000):
+def plot_rws(X, window=100, k=5, lim=1000, save_opt = False, save_name = "plot_rws"):
     shift = 75
     X = X[window:]
     t = range(len(X))
@@ -183,4 +192,8 @@ def plot_rws(X, window=100, k=5, lim=1000):
         plt.ylim([-1, 1])
     
     plt.tight_layout()
+    if save_opt:
+        plt.savefig('{}.png'.format(save_name), dpi=300)
+        
     plt.show()
+    
